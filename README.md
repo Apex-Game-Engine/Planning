@@ -15,8 +15,8 @@ The main modules in the project include -
 
 | Module | Type | Function |
 | ------ | ---- | --------- |
-| Foundation | Static lib | Provides platform-agnostic essential functionality - memory management, string handling, data structures, math, etc. |
-| Graphics | Static lib | Provides API abstraction over Vulkan (and other graphics API in the future). |
+| Foundation | [Object lib](https://cmake.org/cmake/help/latest/command/add_library.html#object-libraries) | Provides platform-agnostic essential functionality - memory management, string handling, data structures, math, etc. |
+| Graphics | Object lib | Provides API abstraction over Vulkan (and other graphics API in the future). |
 | Engine | Shared lib | Provides APIs and implementation of base Engine functionality - rendering, asset management, inputs, scene graph, components, events, etc. |
 | GUI | Shared lib | Provides API for creating in-game GUI components using Engine's renderer and debugging UI (using ImGui). |
 | Runtime | Shared lib | Implements the Main loop (or Game loop) with callback setup and Engine start up and shutdown sequences. Runs lua scripts and registered native scripts. (Intended to be customized for various application types - Shooter games, RPG, 3D Model Viewer app, etc.) |
@@ -26,3 +26,4 @@ The main modules in the project include -
 | LuaScripts | Lua lib | Game entity specialization/loading scripts and game logic in Lua. (Focused toward faster iteration. Not for high performance game code.) |
 
 ![inter-dependencies](./project-inter-dependencies.svg)
+
