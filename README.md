@@ -9,7 +9,7 @@ The main modules in the project include -
 3. Graphics
 4. GUI
 5. Runtime
-6. Editor
+6. Editor --> This will be replaced by a slew of standalone tools (material editor, visual scripting, data converters, etc.) Check [Tools](Tools.md)
 7. Game
 8. Scripts
 
